@@ -30,7 +30,7 @@ const Quiz = () => {
             You scored {count}/{quizData.length} correct answers
           </p>
           <a
-            href="/"
+            href="/quizzical-app/"
             className="rounded-lg bg-[#4D5B9E] py-3 px-5 text-white hover:opacity-70"
           >
             Play again
