@@ -44,11 +44,21 @@ function App() {
       <FormProvider>
         <main
           className={`bg-[#F5F7FB] relative z-0 ${
-            isStart ? "p-32 max-sm:p-10 h-full" : "flex justify-center items-center h-screen"
+            isStart
+              ? "p-32 max-sm:p-10 h-full"
+              : "flex justify-center items-center h-screen"
           }`}
         >
-          <img src="assets/yellow.png" alt="yellow" className="absolute top-0 right-0 -z-10" />
-          <img src="assets/bluewhite.png" alt="bluewhite" className="absolute bottom-0 left-0 -z-10"/>
+          <img
+            src="assets/yellow.png"
+            alt="yellow"
+            className="absolute top-0 right-0 -z-10"
+          />
+          <img
+            src="assets/bluewhite.png"
+            alt="bluewhite"
+            className="absolute bottom-0 left-0 -z-10"
+          />
           {isStart ? (
             <Quiz></Quiz>
           ) : (

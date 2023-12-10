@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Question from "./Question";
 import FormContext from "./FormContext";
 import DataContext from "../DataContext";
-
+const base  = import.meta.env.BASE_URL;
 const Quiz = () => {
   const { formData, setIsSubmit, isSubmit } = useContext(FormContext);
   const quizData = useContext(DataContext);
@@ -30,7 +30,7 @@ const Quiz = () => {
             You scored {count}/{quizData.length} correct answers
           </p>
           <a
-            href="quizzical-app"
+            href={base}
             className="rounded-lg bg-[#4D5B9E] py-3 px-5 text-white hover:opacity-70"
           >
             Play again

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intro = ({ setIsStart,setCustomQuiz }) => {
+const Intro = ({ setIsStart, setCustomQuiz}) => {
   const [selectedOptionCategory, setSelectedOptionCategory] =
     React.useState("");
   const [selectedOptionDifficulty, setSelectedOptionDifficulty] =
@@ -25,7 +25,8 @@ const Intro = ({ setIsStart,setCustomQuiz }) => {
       selectedOptionCategory,
       selectedOptionDifficulty,
       selectedOptionType,
-    })
+    });
+
     setIsStart(true);
   }
 
