@@ -39,6 +39,17 @@ function App() {
     return <div>Error: {error.message}</div>;
   }
 
+  if (data.results.length === 0) {
+    return (
+      <div className=" flex flex-col gap-3 justify-center items-center h-screen">
+        <p className="text-3xl">data not available</p>
+        <a href="https://faizal789.github.io/quizzical-app/" className="rounded-lg bg-[#4D5B9E] py-2 px-5 text-white hover:opacity-70">
+          Try again
+        </a>
+      </div>
+    );
+  }
+
   return (
     <DataContext.Provider value={data.results}>
       <FormProvider>

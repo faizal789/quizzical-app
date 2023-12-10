@@ -4,7 +4,6 @@ import RadioGroup from "./RadioGroup";
 
 const Question = () => {
   const quizData = useContext(DataContext);
-
   const [shuffledArray, setShuffledArray] = React.useState([]);
 
   useEffect(() => {
